@@ -1,0 +1,49 @@
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+    <!--minsection-start-->
+    <section class="midsection" style="background: url('{% static 'images/banner5.png' %}');background-size: cover;
+    background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="banner-about">
+                    <h2>Blogs</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry</p>
+                    <div class="up-arrow">
+                        <a href="{% url 'home' %}"> <img src="{% static 'images/up-a.png' %}" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog new-mar">
+        <div class="container">
+            <div class="blogs">
+                <h6>Our Blogs</h6>
+                <h2>BarkVille Pet Care Story<br>For Your Best Care Blogs.</h2>
+            </div>
+            <div class="row">
+                {% for blog in blogs %}
+                <div class="col-md-4">
+                    <div class="blogs-section">
+                        <img src="{{ blog.image.url }}" alt="">
+                    </div>
+                    <div class="blog-section">
+                        <h4>{{ blog.title }}</h4>
+                        <p>{{ blog.content|slice:":180" }}</p>
+                        <p><strong>- {{ blog.author }}</strong></p>
+                        <div class="btn">
+                            <a href="{% url 'blog_details' blog.id %}">Read More..</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+        {% include 'app/pagination.html' with queryset=blogs custom_range=custom_range %}
+    </section>
+    <!--minsection end-->
+    {% include 'app/footer.html' %}
+{% endblock %}

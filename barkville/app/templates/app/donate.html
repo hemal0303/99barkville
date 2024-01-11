@@ -1,0 +1,35 @@
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+
+    <!--minsection-start-->
+    <section class="midsection" style="background: url('{% static 'images/banner6.png' %}');background-size: cover;
+    background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="banner-about">
+                    <h2>Donate Us</h2>
+                    <p>Give hope, Give Joy, Give A Donation.</p>
+                    <div class="up-arrow">
+                        <a href="{% url 'home' %}"> <img src="{% static 'images/up-a.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="container">
+            <div class="location">
+                <h4>Donate to help Us keep going!</h4>
+                    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MDNJibwaqMGSBL" async> </script> </form>
+                <span>Discover the joy of adoption at our dog shelter - give a rescue dog a second chance at a forever home!</span>
+            </div>
+            <div class="map1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3667.4994577481834!2d72.72532407638495!3d23.188461910115297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDExJzE4LjUiTiA3MsKwNDMnNDAuNCJF!5e0!3m2!1sen!2sca!4v1689356958556!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    {% include 'app/footer.html' %}
+
+{% endblock %}

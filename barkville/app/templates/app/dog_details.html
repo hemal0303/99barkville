@@ -1,0 +1,69 @@
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+    <!--minsection-start-->
+    <section class="midsection" style="background: url('{% static 'images/banner5.png' %}');background-size: cover;
+    background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="banner-about">
+                    <h2>Know our dog better</h2>
+                    <div class="up-arrow">
+                        <a href="{% url 'home' %}"> <img src="{% static 'images/up-a.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="training">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-training">
+                        <h6>Our Dog</h6>
+                        <h2>{{ dog.name}}</h2>
+                        <p><strong>Breed:</strong> {{ dog.breed.name }}</p>
+                        <p><strong>Age:</strong> {{ dog.age }}</p>
+                        <p><strong>Color:</strong> {{ dog.color }}</p>
+                        <p><strong>Up for adoption:</strong> {% if dog.up_for_adoption %} &#x2705; {% else %}&#10060{% endif %}</p>
+                        <p><strong>Vaccinated:</strong> {% if dog.vaccinated %} &#x2705; {% else %}&#10060{% endif %}</p>
+                        <p><strong>Sterlized:</strong> {% if dog.sterilized %} &#x2705; {% else %}&#10060{% endif %}</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="training-about">
+                        <img src="{{ dog.image1.url }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <h2>Rescue Story:</h2>
+                    <p>{{ dog.rescue_story }}</p>
+                </div>
+
+                {% if dog.image2 %}
+                <div class="col-md-6">
+                    <div class="training-img">
+                        <img src="{{ dog.image2.url }}" alt="">
+                    </div>
+                </div>
+                {% endif %}
+                {% if dog.image3 %}
+                <div class="col-md-6">
+                    <div class="training-img">
+                        <img src="{{ dog.image3.url }}" alt="">
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+
+        </div>
+
+    </section>
+    <!--minsection end-->
+    {% include 'app/footer.html' %}    
+{% endblock %}

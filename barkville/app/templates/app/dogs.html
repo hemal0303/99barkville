@@ -1,0 +1,52 @@
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+    <!--minsection-start-->
+    <section class="midsection" style="background: url('{% static 'images/banner5.png' %}');background-size: cover;
+    background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="banner-about">
+                    <h2>Our Lovely Dogs</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry</p>
+                    <div class="up-arrow">
+                        <a href="{% url 'home' %}"> <img src="{% static 'images/up-a.png' %}" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog new-mar">
+        <div class="container">
+            <div class="blogs">
+                <h6>Our Lovely Dogs</h6>
+            </div>
+            <div class="row">
+                {% for dog in dogs %}
+                <div class="col-md-4">
+                    <div class="blogs-section">
+                        <img src="{{ dog.image1.url }}" alt="">
+                    </div>
+                    <div class="blog-section">
+                        <h4> <strong>Name:</strong> {{ dog.name }}</h4>
+                        <p><strong>Breed:</strong> {{ dog.breed.name }}</p>
+                        <p><strong>Age:</strong> {{ dog.age }}</p>
+                        <p><strong>Color:</strong> {{ dog.color }}</p>
+                        <p><strong>Up for adoption:</strong> {% if dog.up_for_adoption %} &#x2705; {% else %}&#10060{% endif %}</p>
+                        <p><strong>Vaccinated:</strong> {% if dog.vaccinated %} &#x2705; {% else %}&#10060{% endif %}</p>
+                        <p><strong>Sterlized:</strong> {% if dog.sterilized %} &#x2705; {% else %}&#10060{% endif %}</p>
+                        <div class="btn">
+                            <a href="{% url 'dog_details' dog.id %}">Read More..</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+        {% include 'app/pagination.html' with queryset=dogs custom_range=custom_range %}
+    </section>
+    <!--minsection end-->
+    {% include 'app/footer.html' %}
+{% endblock %}

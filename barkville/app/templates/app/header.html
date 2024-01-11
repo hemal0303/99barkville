@@ -1,0 +1,133 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BarkVille HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script>
+        var x = document.getElementById("resultsubscription");
+        var currentLocation1 = window.location;
+
+        //var url_string = "http://localhost/baby/newform.html?seccess=1"; //window.location.href
+        var url = new URL(currentLocation1);
+        var seccess1 = url.searchParams.get("successreq");
+        var error1 = url.searchParams.get("failreq");
+
+        if (seccess1 == 1) {
+            $(".seccess1").show();
+            $(".error1").hide();
+        }
+        else if (error1 == 1) {
+            $(".seccess1").hide();
+            $(".error1").show();
+        }
+        else {
+            $(".seccess1").hide();
+            $(".error1").hide();
+            //document.getElementById("resultmm").style.display = "none";
+        }
+
+    </script>
+
+</head>
+<body>
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loading-center">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader-end -->
+    <!--header-start-->
+    <header class="top-header">
+        <div class=container>
+            <div class=row>
+                <div class="col-sm-6">
+                    <div class="top-left">
+                        <ul class="top">
+                            <li><a href="mailto:99barkville@gmail.com"><i class="fa fa-envelope"></i></a> <span>99barkville@gmail.com</span></li>
+                        </ul>
+                        <ul class="top">
+                            <li><i class="fa fa-phone"></i><a href="https://api.whatsapp.com/send?phone=918905578953"><i class="fa fa-whatsapp" style="color:#ce7c2a"></i></a><span> +91 8905578953</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="social-icon">
+                        <ul class="clearfix">
+                            <li><a target="_blank" href="https://www.facebook.com/99Barkville/"><span class="fa fa-facebook-square"></span></a></li>
+                            <li><a target="_blank" href="https://in.linkedin.com/in/swati-verma-a1322597"><span class="fa fa-linkedin"></span></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/99_barkville/?hl=en"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="active nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Home
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="active dropdown-item" href="index.html">Home One</a>
+                              <a class="dropdown-item" href="home-2.html">Home Two</a>
+                              
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'about_us' %}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'blogs' %}">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'dogs' %}">Dogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'donate' %}">Donate</a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="get-btn">Get In Touch!</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>

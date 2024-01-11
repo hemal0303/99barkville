@@ -1,0 +1,1739 @@
+/* Theme Name: BarkVille - HTML Template */
+
+/* 1. Theme default css */
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Jost", sans-serif;
+}
+.copy p {
+  text-align: center;
+}
+.map1 iframe,
+#myModal iframe {
+  width: 100%;
+}
+p,
+li,
+a,
+button,
+span,
+h5,
+h6,
+h3,
+h1,
+h2,
+h4 {
+  font-family: "Jost", sans-serif;
+}
+
+label {
+  color: #7e7e7e;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+*::-moz-selection {
+  background: #d6b161;
+  color: #fff;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #444;
+  color: #fff;
+  text-shadow: none;
+}
+
+*::-moz-placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+}
+
+*::placeholder {
+  color: #555555;
+  font-size: 14px;
+  opacity: 1;
+}
+/* Preloader */
+#preloader {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  margin-top: 0px;
+  top: 0px;
+  z-index: 999;
+}
+
+#loading-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 75px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.loader .loader-outter {
+  position: absolute;
+  border: 4px solid #ffbe00;
+  border-left-color: transparent;
+  border-bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41)
+    infinite;
+  animation: loader-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+}
+
+.loader .loader-inner {
+  position: absolute;
+  border: 4px solid #2a2a2a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  border-right: 0;
+  border-top-color: transparent;
+  -webkit-animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41)
+    infinite;
+  animation: loader-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+}
+
+@-webkit-keyframes loader-outter {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-outter {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes loader-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+#navbarNav ul li.active a {
+  color: #ce7c2a;
+}
+.top-header {
+  background: #7f7045;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.top-left {
+  display: flex;
+  list-style: none;
+}
+.top {
+  color: #fff;
+  font-size: 16px;
+  padding: 14px 0px 0px 0px;
+  list-style: none;
+  margin-right: 30px;
+}
+.top a {
+  color: #fff;
+}
+.fa.fa-envelope {
+  padding: 0 7px 0 0px;
+}
+.fa.fa-phone {
+  padding: 0 7px 0 0;
+}
+
+ul.clearfix {
+  display: flex;
+  list-style: none;
+  padding: 14px 0 0 0;
+}
+.clearfix li {
+  padding: 0 0 0 5px;
+}
+.clearfix a {
+  color: #fff;
+}
+
+.social-icon {
+  float: right;
+}
+.fa-linkedin:before {
+  content: "\f0e1";
+  background: #0663cf;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+}
+.fa-instagram:before {
+  content: "\f16d";
+  background: #a721b3;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+}
+.fa-twitter:before {
+  background: #7ccfd3;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+}
+.fa-facebook-square:before {
+  content: "\f082";
+  background: #303fbf;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+}
+.fa-pinterest-p:before {
+  content: "\f231";
+  background: #be2c4c;
+  padding: 3px 5px 3px 5px;
+  border-radius: 3px;
+}
+.bg-light {
+  background-color: #fff !important;
+  padding: 10px 0;
+}
+
+#navbarNav {
+  justify-content: right;
+  padding: 0 0 0 120px;
+}
+.navbar-brand img {
+  width: 100%;
+}
+.nav-item {
+  font-family: "Jost";
+  padding: 0 0px 0 40px;
+  font-size: 21px;
+  font-weight: 500;
+}
+.navbar-collapse button {
+  color: #fff;
+  margin: 0 -80px 0 42px;
+  background: #ce7c2a;
+  padding: 12px 25px 12px 25px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 21px;
+  font-weight: 500;
+}
+.navbar-collapse button:hover {
+  color: #fff;
+  background: #173b67;
+}
+.nav-item a {
+  color: #0000007a;
+  text-decoration: none;
+}
+.nav-item a:hover {
+  color: #ce7c2a;
+}
+
+/* footer css*/
+.icon {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+.footer-one h4 {
+  padding: 0px 0 15px 0;
+  font-size: 22px;
+  font-family: "Jost";
+  color: #ce7c2a;
+}
+.footer-one span {
+  padding: 0 0 14px 0;
+  font-size: 16px;
+  color: #b3b1b1;
+}
+.clearfix li a {
+  color: #fff;
+}
+.clearfix li a span {
+  color: #fff;
+}
+.social-icon1 {
+  padding: 14px 0 0px 0;
+}
+.icon i {
+  margin-right: 11px;
+  line-height: 33px;
+  text-align: left;
+  float: left;
+  display: inline-block;
+
+  padding: 0px !important;
+}
+ul {
+  padding-left: 0px;
+}
+.footer-list li {
+  color: #fff;
+  padding: 0 0 6px 0;
+  list-style: none;
+}
+.footer-list li a {
+  color: #b3b1b1;
+  line-height: 27px;
+  width: 100%;
+  display: block;
+}
+.fa-location-arrow:before {
+  content: "\f124";
+  color: #ce7c2a;
+}
+.fa-phone:before {
+  content: "\f095";
+  color: #ce7c2a;
+}
+.fa-envelope:before {
+  content: "\f0e0";
+  color: #ce7c2a;
+}
+.icon a {
+  padding: 0px 17px 0px 0px;
+  font-size: 22px;
+}
+.footer {
+  background: #000;
+  padding: 150px 0 10px 0;
+}
+.footer hr {
+  padding: 0px 0px 0px 0px;
+  background: #857e7e61;
+}
+.copy p {
+  color: #fff;
+  padding: 10px 0 0 0;
+}
+
+.top-footer {
+  padding: 0px 0 0 100px;
+}
+.block {
+  position: relative;
+  background-color: #ce7c2a;
+  height: 200px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  z-index: 1;
+  margin-bottom: -96px;
+}
+.block img {
+  position: absolute;
+  bottom: -43px;
+  left: 40px;
+  height: 298px;
+  width: auto;
+}
+.block h4 {
+  color: #fff;
+  font-size: 25px;
+  font-family: "Jost";
+  padding: 50px 0 11px 0;
+}
+.block input[type="text"] {
+  width: 100%;
+  padding: 15px;
+}
+.at {
+  position: relative;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.swiper-button-prev {
+  top: 60%;
+}
+.swiper-button-next {
+  top: 60%;
+}
+
+.po-ab-se {
+  top: 40%;
+  right: 0;
+  left: 0;
+  padding: 9em 0;
+}
+.po-ab-se h2 {
+  font-family: "Jost";
+  font-size: 46px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.po-ab-se span {
+  font-weight: normal;
+}
+.po-ab-se p {
+  color: #fff;
+  padding: 14px 0 14px 0;
+  font-size: 20px;
+  font-family: "Jost";
+}
+
+.po-ab-se button {
+  color: #fff;
+  background: #ce7c2a;
+  padding: 12px 35px 12px 35px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 15px 0 0px;
+}
+
+.po-ab-se button:hover {
+  color: #fff;
+  background: #173b67;
+}
+.po-ab-se img {
+  width: 5%;
+  padding: 10px 10px 10px 10px;
+  background: #70d0f7;
+  border-radius: 7px;
+}
+
+.pets {
+  padding: 90px 0 90px 0;
+}
+.pets:before {
+  content: "";
+  right: 0;
+  top: 0px;
+  bottom: 0;
+  position: absolute;
+}
+
+.d-img {
+  left: 87%;
+  position: absolute;
+}
+.d-img img {
+  width: 100%;
+}
+.d-img1 {
+  position: absolute;
+  left: 0px;
+}
+.d-img1 img {
+  width: 60%;
+}
+.pet img {
+  width: 90%;
+}
+
+.pet1 {
+  padding: 90px 0 0 20px;
+}
+.pet1 h6 {
+  padding: 0 0 20px 0;
+  font-size: 15px;
+  font-family: "Jost";
+  color: #7f7045;
+}
+.pet1 img {
+  padding: 0 14px 0 0px;
+}
+.pet1 h2 {
+  padding: 0 0 20px 0;
+  font-family: "Jost";
+  font-size: 40px;
+}
+.pet1 p {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+
+.pet-care {
+  padding: 60px 0 60px 0px;
+  background: #f5f5f5;
+}
+.pet-dog {
+  width: 20%;
+  padding: 0 20px;
+}
+.pet-care h6 {
+  text-align: center;
+  padding: 0 0px 16px 0;
+  color: #7f7045;
+  font-size: 18px;
+}
+.pet-care h2 {
+  text-align: center;
+  padding: 0 0px 30px 0;
+  font-size: 32px;
+  font-family: "Jost";
+}
+.pet-service {
+  background-color: #ce7c2a;
+  border-radius: 99px 99px 99px 99px;
+  padding: 20px 15px 1px 15px;
+  height: 305px;
+  text-align: center;
+  position: relative;
+}
+.right-arrow {
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.pet-service:hover {
+  background: #7f7045;
+}
+.pet-img img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+.pet-service h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Jost";
+}
+.pet-service p {
+  color: #fff;
+  font-family: "Jost";
+  font-size: 16px;
+  padding: 0px;
+}
+
+.right-arrow {
+  background: #ffcc01;
+}
+.dog-safety {
+  padding: 0px 0 90px 0;
+}
+
+.safety-first img {
+  width: 100%;
+  position: relative;
+  left: -21px;
+  top: 0;
+}
+.dog-s {
+  display: block;
+  margin-bottom: 3em;
+}
+.dog-s img {
+  width: 20%;
+  padding: 0px 11px 37px 0px;
+  float: left;
+  margin-right: 20px;
+}
+.dogsafety {
+  padding: 70px 0 18px 0;
+}
+.dogsafety h6 {
+  font-size: 16px;
+  font-family: "Jost";
+  color: #7f7045;
+}
+.dogsafety img {
+  padding: 0 14px 0 0px;
+  width: 10%;
+}
+.dogsafety h2 {
+  font-size: 40px;
+  padding: 10px 0 7px 0;
+  font-family: "Jost";
+}
+.dog-s h3 {
+  font-size: 24px;
+  font-family: "Jost";
+  padding: 0px;
+}
+.dogs-s {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.dog-s p {
+  font-size: 18px;
+  font-family: "Jost";
+  padding-top: 10px;
+}
+.rating {
+  padding: 0px 0 90px 0;
+}
+
+.review1 h6 {
+  font-size: 16px;
+  font-family: "Jost";
+  color: #7f7045;
+}
+.review1 img {
+  padding: 0 14px 0 0px;
+  width: 10%;
+}
+.review1 h2 {
+  font-size: 30px;
+  padding: 20px 0 20px 0;
+  font-family: "Jost";
+}
+.review1 p {
+  font-family: "Jost";
+  padding: 0 0 15px 0;
+}
+
+.test-rating {
+  display: flex;
+  list-style: none;
+  padding: 0 0px 0px 0px;
+  color: gold;
+}
+.test-rating1 {
+  display: flex;
+  list-style: none;
+  padding: 20px 0px 0px 20px;
+  color: gold;
+}
+.rating1 {
+  padding: 0px 0 0 20px;
+}
+.rating1 h4 {
+  font-family: "Jost";
+  font-size: 20px;
+  padding: 0 0 10px 0;
+}
+.rating1 p {
+  font-family: "Jost";
+  font-size: 17px;
+  padding: 0 0 10px 0;
+}
+
+.right {
+  display: flex;
+  padding: 0 0 0 20px;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 16%;
+}
+.right img {
+  height: 16%;
+  border-radius: 31px;
+}
+.owl-nav {
+  float: right;
+}
+.owl-nav img {
+  background: #ce7c2a;
+  padding: 6px;
+  margin: 15px 0px 0 15px;
+  width: 39px;
+}
+.owl-nav img:hover {
+  background: #7f7045;
+}
+.right-2 h4 {
+  font-size: 18px;
+  font-family: "Jost";
+  padding: 4px 0 0 16px;
+}
+.right-2 p {
+  font-size: 13px;
+  font-family: "Jost";
+  padding: 0 0 0 16px;
+}
+.review-rating {
+  background: #dcdcdc52;
+}
+
+/*About Us*/
+
+.midsection {
+  background-position: top;
+  padding: 112px 0 112px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-about h2 {
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+  font-family: "Jost";
+  padding: 0 0 15px 0;
+}
+.banner-about p {
+  color: #fff;
+  font-size: 21px;
+  font-family: "Jost";
+  font-weight: 400;
+  padding: 0 0 15px 0;
+}
+.up-arrow {
+  padding: 15px 0 0 0;
+}
+
+.up-arrow img {
+  width: 15%;
+  padding: 14px;
+  background: #70d0f7;
+  border-radius: 6px;
+}
+.BarkVille {
+  padding: 70px 0 70px 0;
+}
+.about-BarkVille {
+  padding: 70px 70px 0 0px;
+}
+.about-BarkVille h6 {
+  padding: 0 0 20px 0;
+  font-size: 15px;
+  font-family: "Jost";
+  color: #7f7045;
+}
+.about-BarkVille img {
+  padding: 0 14px 0 0px;
+}
+.about-BarkVille h2 {
+  padding: 0 0 20px 0;
+  font-family: "Jost";
+  font-size: 40px;
+}
+.about-BarkVille p {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+.BarkVille-about img {
+  width: 100%;
+}
+.our-mission {
+  padding: 0 0 70px 0;
+}
+.pd-0 {
+  padding: 0;
+}
+
+.our-vision {
+  background: #7f7045;
+  padding: 46px;
+}
+.our-img img {
+  width: 100%;
+
+  height: 100%;
+}
+.our-vision h3 {
+  color: #fff;
+  font-size: 29px;
+  font-family: "Jost";
+}
+.our-vision p {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Jost";
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.story {
+  background: #dcdcdc4d;
+  padding: 0px 0 270px 0;
+}
+
+.story h6 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Jost";
+  color: #7f7045;
+  padding: 90px 0 10px 0;
+  font-weight: 600;
+}
+.story h2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: "Jost";
+  font-weight: 600;
+  padding: 10px 0 40px 0;
+}
+.story-img1 img {
+  width: 100%;
+  /*  margin: -270px 0 0 0;*/
+}
+.story-img1 {
+  padding: 0 90px 90px 90px;
+  margin: -270px 0 0 0;
+}
+
+img.img-aboutp {
+  width: 6%;
+  position: relative;
+  left: 50%;
+  top: -50%;
+}
+
+.fresh-food1 img {
+  width: 100%;
+  padding: 90px 46px 90px 0px;
+}
+.healthy h2 {
+  font-size: 40px;
+  font-family: "Jost";
+  font-weight: 600;
+  padding: 45px 0 0 0px;
+}
+.healthy-food {
+  display: flex;
+  padding: 40px 0 0px 0;
+}
+.healthy-food img {
+  width: 17%;
+  padding: 10px;
+  z-index: 0;
+}
+.circle {
+  padding: 48px;
+  border-radius: 50%;
+  position: absolute;
+  background: #7f70457a;
+}
+
+.h-food {
+  padding: 0 0 0 35px;
+}
+.h-food h3 {
+  font-size: 25px;
+  font-family: "Jost";
+  font-weight: 500;
+}
+.h-food p {
+  font-size: 17px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+.fresh-food {
+  position: relative;
+  margin: 0 0 100px 0;
+}
+.fresh-food:before {
+  content: "";
+  background: #dcdcdc54;
+  right: 0;
+  width: 70%;
+  top: 0px;
+  bottom: 0;
+  position: absolute;
+}
+.healthy {
+  padding: 90px 0 0 0;
+}
+/*Services*/
+.service {
+  padding: 90px 0;
+}
+
+.service-pet {
+  padding: 30px 0 0 0px;
+}
+.service-ab img {
+  width: 100%;
+  padding: 0px 44px 0 23px;
+}
+.service-pet h6 {
+  padding: 0 0 20px 0;
+  font-size: 15px;
+  font-family: "Jost";
+  color: #7f7045;
+}
+.service-pet img {
+  padding: 0 14px 0 0px;
+}
+.service-pet h2 {
+  padding: 0 0 20px 0;
+  font-family: "Jost";
+  font-size: 40px;
+}
+.service-pet p {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+.services {
+  padding: 90px 0px;
+  background: #f5f5f5;
+  margin: 0px 0px 90px 0;
+}
+.our-services {
+  text-align: center;
+}
+.our-services h5 {
+  font-size: 20px;
+  font-family: "Jost";
+  font-weight: 600;
+  color: #7f7045;
+  padding: 0 0 20px 0;
+}
+.our-services h2 {
+  font-size: 35px;
+  font-family: "Jost";
+  font-weight: 600;
+  padding: 0 0 30px 0;
+}
+.styling-pet {
+  padding: 0 100px;
+}
+
+.styling-pet img {
+  width: 100%;
+  border-radius: 65%;
+  box-shadow: 0px 0px 15px 10px #0000002b;
+}
+
+.pets-groom h4 {
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 0 20px 0;
+}
+.pets-groom p {
+  text-align: center;
+  font-size: 19px;
+  font-family: "Jost";
+  font-weight: 400;
+  padding: 0 0 60px 0;
+}
+.pets-grooming {
+  background: #fff;
+  padding: 40px 0 0px 0;
+  position: relative;
+  margin: 13px 0 0 0;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-top: 90px solid transparent;
+  border-left: 90px solid #7f7045;
+  border-bottom: 0px solid transparent;
+}
+.arrow-image {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 13%;
+}
+.pets-grooming:hover {
+  background: #7f7045;
+  color: #fff;
+}
+/*services-details*/
+
+.service-detail {
+  padding: 90px 0 90px 0;
+}
+.s-detial {
+  padding: 0px 0 50px 0;
+}
+.s-detial h6 {
+  padding: 0 0 20px 0;
+  font-size: 15px;
+  font-family: "Jost";
+  color: #7f7045;
+}
+.s-detial img {
+  padding: 0 14px 0 0px;
+}
+.s-detial h2 {
+  padding: 0 0 20px 0;
+  font-family: "Jost";
+  font-size: 40px;
+}
+.s-detial1 p {
+  font-size: 16px;
+  font-family: "Jost";
+  font-weight: 500;
+}
+.fact img {
+  width: 100%;
+}
+.distracted-fact {
+  padding: 15px 0 0 40px;
+}
+.distracted-fact h2 {
+  font-size: 28px;
+  font-family: "Jost";
+  padding: 0 0 10px 0;
+}
+.distracted-fact p {
+  font-size: 17px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+.health {
+  padding: 22px 0 50px 0;
+}
+.health h3 {
+  font-size: 24px;
+  font-family: "Jost";
+  font-weight: 600;
+  color: #7f7045;
+}
+.health p {
+  font-size: 17px;
+  font-family: "Jost";
+}
+.fact-reader {
+  padding: 40px 0 40px 0;
+}
+.text-reader {
+  padding: 0px 0 13px 0;
+}
+.text-reader h2 {
+  font-size: 30px;
+  font-family: "Jost";
+  padding: 0 0 10px 0;
+}
+.text-reader p {
+  font-size: 17px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+.variation {
+  background: #7f7045;
+  padding: 30px;
+  margin: 16px 0;
+}
+.variation p {
+  font-size: 22px;
+  font-family: "Jost";
+  font-weight: 400;
+  color: #fff;
+}
+.text-contrary h2 {
+  font-size: 30px;
+  font-family: "Jost";
+  padding: 30px 0 20px 0;
+}
+.text-contrary p {
+  font-size: 17px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+/*Training*/
+
+.p-training {
+  padding: 90px 0 170px 0;
+  background: #f5f5f5;
+  margin: 0 0 -103px 0;
+}
+
+.our-training {
+  text-align: center;
+  padding: 0px 0 30px 0;
+}
+.our-training h6 {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 600;
+  color: #7f7045;
+  padding: 0 0 10px 0;
+}
+.our-training h2 {
+  font-size: 32px;
+  font-family: "Jost";
+  font-weight: 500;
+  padding: 0 0 10px 0;
+}
+.virtual-training {
+  background: #fff;
+  margin: 0 0 58px 0;
+}
+
+.virtual-training-img {
+  padding: 30px 85px;
+}
+
+.circle-img {
+  float: none;
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  background: rgb(206 124 42 / 58%);
+  margin-top: 0;
+  border-radius: 100%;
+  padding: 12px;
+}
+.dog-tr {
+  background-color: #ffffff;
+  box-shadow: 0px 3px 8px 0px #00000032;
+  padding: 20px 0 1px 0;
+  height: 305px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.dog-trimage {
+  float: none;
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  background: rgb(206 124 42 / 58%);
+  margin-top: 13px;
+  border-radius: 100%;
+  line-height: 50px;
+}
+.dog-trimage img {
+  height: 77%;
+  padding-top: 7px;
+}
+.dis-dog {
+  padding: 0px 10px;
+}
+.dog-tr h4 {
+  padding: 18px 0px 7px 0;
+  font-size: 20px;
+  font-family: "jost";
+}
+.dog-tr h4 a {
+  color: #222;
+}
+.dog-tr span {
+  font-size: 17px;
+  font-family: "jost";
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+.dog-tr p {
+  font-size: 17px;
+  font-family: "jost";
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.dog-trarrow {
+  padding: 5px 0 0 0;
+  position: absolute;
+  background: #e2b383;
+  width: 45px;
+  height: 45px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -23px;
+}
+.dog-trarrow img {
+  width: 13px;
+  margin-top: 6px;
+}
+.dog-tr:hover {
+  color: #fff;
+  background: #7f7045;
+}
+.dog-tr:hover .dog-trimage {
+  background: #fff;
+}
+.dog-tr:hover .dis-dog h4 a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.dog-tr:hover .dog-trarrow {
+  background: #fff;
+}
+
+.virtual-training-img img {
+  width: 100%;
+}
+.virtual-training-heading {
+  text-align: center;
+  padding: 0px 16px 0 16px;
+}
+.virtual-training-heading h5 {
+  font-size: 22px;
+  font-family: "Jost";
+  font-weight: 600;
+  padding: 0 0 10px 0px;
+}
+.virtual-training-heading p {
+  font-size: 17px;
+  font-family: "Jost";
+}
+.virtual-training-arrow {
+  text-align: center;
+}
+.virtual-training-arrow img {
+  background: #7f7045;
+  margin: 0px 0 -19px 0;
+  height: 44px;
+  width: 15%;
+  padding: 10px;
+}
+.virtual-training:hover {
+  background: #7f7045;
+  color: #fff;
+}
+
+.virtual-training:hover .circle-img {
+  background-color: #fff;
+}
+
+/*Training-detail*/
+.training {
+  padding: 90px 0;
+}
+.training-about img {
+  width: 100%;
+}
+.about-training h6 {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 600;
+  color: #7f7045;
+  padding: 0 0 10px 0;
+}
+.about-training h2 {
+  font-size: 32px;
+  font-family: "Jost";
+  font-weight: 500;
+  padding: 0 0 10px 0;
+}
+.about-training span {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 600;
+}
+.about-training p {
+  font-size: 16px;
+  font-family: "Jost";
+  font-weight: 400;
+  padding: 20px 0 0px 0;
+}
+
+.training-img img {
+  width: 100%;
+}
+.text h2 {
+  font-size: 25px;
+  font-family: "Jost";
+  font-weight: 500;
+  padding: 0 0 20px 0;
+}
+.text {
+  padding: 70px 0 30px 0;
+}
+.text p {
+  font-size: 17px;
+  font-family: "Jost";
+}
+.text1 p {
+  font-size: 17px;
+  font-family: "Jost";
+}
+
+.text1 {
+  padding: 40px 0 0px 0;
+}
+/* blogs */
+
+.blog {
+  padding: 90px 0 170px 0;
+  background: #f5f5f5;
+  position: relative;
+  margin: 0 0 -103px 0;
+}
+.new-mar {
+  padding-bottom: 250px;
+}
+
+.blogs {
+  text-align: center;
+  padding: 0px 0 50px 0;
+}
+.blogs h6 {
+  font-size: 20px;
+  font-family: "Jost";
+  color: #7f7045;
+  padding: 0 0 20px 0;
+}
+.blogs h2 {
+  font-size: 30px;
+  font-family: "Jost";
+  font-weight: 600;
+}
+.blogs-section img {
+  width: 100%;
+}
+.blog-section {
+  padding: 20px 0 0px 0;
+}
+.blog-section h4 {
+  font-size: 18px;
+  font-family: "Jost";
+}
+.blog-section p {
+  font-size: 14px;
+  font-family: "Jost";
+  padding: 10px 0 0px 0;
+}
+
+.btn a {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 500;
+  color: #ce7c2a;
+  text-decoration: none;
+}
+
+/*blog-detail*/
+
+.blog-detail {
+  padding: 90px 0 170px 0;
+  background: #f5f5f5;
+  margin: 0 0 -103px 0;
+}
+.blog-deta h6 {
+  font-size: 20px;
+  font-family: "Jost";
+  font-weight: 600;
+  padding: 0 0 10px 0;
+  color: #7f7045;
+}
+.blog-deta h2 {
+  font-size: 30px;
+  font-family: "Jost";
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
+.blog-deta h3 {
+  font-size: 22px;
+  font-family: "Jost";
+  line-height: 1.5;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
+.blog-deta p {
+  font-size: 18px;
+  font-family: "Jost";
+  padding: 0 0 10px 0;
+}
+.blog-img {
+  padding: 0 0 20px 0;
+}
+.blog-img img {
+  width: 100%;
+}
+.blog-heading h3 {
+  font-size: 22px;
+  font-family: "Jost";
+  line-height: 1.5;
+  font-weight: 600;
+  padding: 15px 0 10px 0;
+}
+.blog-heading p {
+  font-size: 18px;
+  font-family: "Jost";
+}
+.b-img {
+  padding: 30px 0 30px 0;
+}
+.b-img img {
+  width: 100%;
+}
+.blog-p p {
+  font-size: 18px;
+  font-family: "Jost";
+  padding: 0 0 10px 0;
+}
+/*contact Us*/
+.map {
+  padding: 90px 0;
+}
+.location {
+  text-align: center;
+  padding: 0px 0 40px 0;
+}
+.location h4 {
+  font-size: 20px;
+  font-family: "Jost";
+  font-weight: 600;
+  padding: 0 0 20px 0;
+  color: #7f7045;
+}
+.location h2 {
+  font-size: 36px;
+  font-family: "Jost";
+  font-weight: 600;
+  padding: 0 0 20px 0;
+  word-spacing: 4px;
+}
+.location span {
+  font-size: 24px;
+  font-family: "Jost";
+  font-weight: 500;
+}
+.contact h2 {
+  font-size: 30px;
+  font-family: "Jost";
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
+.contact span {
+  font-size: 22px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+.reg-form {
+  width: -webkit-fill-available;
+  padding: 2rem 0rem 9rem 0rem;
+}
+
+.reg-form input[type="text-field"] {
+  border: none;
+  background: gainsboro;
+  padding: 20px 117px 20px 10px;
+  margin: 0 0 0 14px;
+  border-radius: 5px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.reg-form input[type="text-area"] {
+  border: none;
+  background: gainsboro;
+  padding: 15px 458px 200px 14px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+.reg-form button {
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 13px 55px;
+  font-size: 25px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.reg-form button:hover {
+  background: #173b67;
+  color: #fff;
+}
+
+.get-btn {
+  color: #fff;
+  margin: 0 0 0 42px;
+  background: #ce7c2a;
+  padding: 12px 25px 12px 25px;
+  border-radius: 30px;
+  border: 0;
+  font-size: 21px;
+  font-weight: 500;
+  float: right;
+}
+.get-btn:hover {
+  color: #fff;
+  background: #173b67;
+}
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+a:hover {
+  text-decoration: none;
+}
+.at-submit {
+  position: absolute;
+  right: 3px;
+  background: #ce7c2a;
+  border: none;
+  color: #fff;
+  font-size: 27px;
+  padding: 10px;
+  width: 52px;
+  height: 52px;
+  top: 3px;
+  line-height: 34px;
+}
+
+.at input {
+  width: 100%;
+  height: 58px;
+  border: none;
+  padding: 10px 20px;
+}
+.min-form input {
+  border: 1px solid #cfcece;
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+}
+.min-form textarea {
+  border: 1px solid #cfcece;
+  width: 100%;
+  padding: 10px;
+  background: #f5f5f5;
+  min-height: 150px;
+  max-height: 150px;
+}
+.btn-sub {
+  font-size: 21px;
+  padding: 10px 20px !important;
+  background: #ce7c2a !important;
+  color: #fff;
+  border: none !important;
+  border-radius: 5px !important;
+  width: 200px !important;
+}
+
+.pet-img {
+  width: 100px;
+  margin: auto;
+}
+
+.right-arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.right-arrow a {
+  display: block;
+  float: none;
+  margin: auto;
+  line-height: 50px;
+}
+
+.right-arrow img {
+  width: 26px;
+  padding: 5px;
+}
+
+/*============Home-2=============*/
+.rt-box {
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 12px 9px 38px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+section.routine {
+  position: relative;
+  z-index: 11;
+  bottom: 50px;
+}
+.routine-icon {
+  padding-right: 15px;
+}
+.routine-info h4 {
+  font-weight: 800;
+}
+
+/*---------Service--------------*/
+.pet-care.pet-services .pet-service {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 30px 15px 30px 15px;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 12px 9px 38px 0px rgba(0, 0, 0, 0.1);
+}
+.pet-care.pet-services .pet-service h4 {
+  color: #000000;
+  margin-top: 20px;
+}
+.pet-care.pet-services .pet-service p {
+  color: #000000;
+}
+.pet-care.pet-services .pet-img {
+  width: 90px;
+  margin: auto;
+  background: #ce7c2a;
+  border-radius: 100px;
+  padding: 10px;
+  height: 90px;
+  display: flex;
+}
+.pet-care.pet-services .pet-img img {
+  width: 50px;
+  margin: auto;
+  display: table;
+}
+.read-btn a {
+  color: #ce7c2a;
+}
+
+.pet-care.pet-services .pet-service:hover {
+  background: #ce7c2a;
+}
+.pet-care.pet-services .pet-service:hover .pet-img {
+  background: #f6ab4a;
+}
+.pet-care.pet-services .pet-service:hover h4 {
+  color: #ffffff;
+  margin-top: 20px;
+}
+.pet-care.pet-services .pet-service:hover p {
+  color: #ffffff;
+}
+.pet-care.pet-services .pet-service:hover .read-btn a {
+  color: #ffffff;
+}
+
+/******Choose----us--------------*/
+.choose-us {
+  background: #7f7045;
+}
+.choose-img {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border-radius: 100px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.dog-s .choose-img img {
+  max-width: 100%;
+  padding: 0px;
+  float: none;
+  margin-right: 0px;
+  width: 100%;
+}
+.choose-us .dogs-s {
+  padding-left: 0px;
+  margin-bottom: 20px;
+}
+/*-------Blog----home2---*/
+section.bloglist-section .blog-section {
+  padding: 30px;
+  background: #f4f4f4;
+}
+section.bloglist-section .blog-section h4 {
+  font-size: 18px;
+  font-family: "Jost";
+  background: #7f7045;
+  padding: 10px;
+  margin-top: -50px;
+  z-index: 111;
+  position: relative;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.blog-list {
+  margin-bottom: 30px;
+}
+/*------------Testimonial-----------------*/
+.rating-testimonial {
+  background-image: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 150px;
+}
+.rating-testimonial .review-rating {
+  background: #dcdcdcf2;
+}
+.rating-testimonial .review1 h6 {
+  color: #ffffff;
+}
+.rating-testimonial .review1 h2 {
+  color: #ffffff;
+}
+.rating-testimonial .review1 p {
+  color: #ffffff;
+}
+.rating-testimonial .rating1 p {
+  color: #000000;
+}
+
+/*=======Menu================*/
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #0000007a;
+  text-decoration: none;
+  background-color: transparent;
+}
+#navbarNav ul li.active .dropdown-menu a.active.dropdown-item {
+  color: #ce7c2a;
+}
+#navbarNav ul li.active .dropdown-menu a.dropdown-item {
+  color: #0000007a;
+}
+
+.PaymentButton-contents {
+  width: 300px;
+  height: 300px;
+}

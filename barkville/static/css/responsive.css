@@ -1,0 +1,851 @@
+/* Extra large devices (large desktops, 1800px and up) */
+@media (max-width: 1800px) {
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+  }
+}
+
+/* Extra large devices (large desktops, 1800px and up) */
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+  #navbarNav {
+    justify-content: center;
+    padding: 0 0 0 0px;
+    position: absolute;
+    top: 93px;
+    background: #fff;
+    left: 0;
+    z-index: 99;
+    right: 0;
+  }
+  .nav-item a {
+    color: #0000007a;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    line-height: 44px;
+  }
+  .get-btn {
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .navbar-collapse button {
+    color: #fff;
+    background: #ce7c2a;
+    border-radius: 30px;
+    border: 0;
+    font-size: 21px;
+    font-weight: 500;
+  }
+  .navbar-brand img {
+    width: 100%;
+  }
+
+  .nav-item {
+    font-family: "Jost";
+    padding: 0 5px 0 17px;
+    font-size: 21px;
+    font-weight: 500;
+  }
+
+  .right-arrow img {
+    width: 26px;
+    padding: 5px;
+  }
+  .d-img1 img {
+    width: 45%;
+  }
+  .circle {
+    padding: 48px;
+    border-radius: 50%;
+    position: absolute;
+    background: #7f70457a;
+    left: 6px;
+  }
+  .healthy-food img {
+    width: 17%;
+    padding: 0px 0px 38px 0px;
+    z-index: 0;
+  }
+  .virtual-training-img {
+    padding: 30px 59px;
+  }
+
+  .virtual-training-heading h5 {
+    font-size: 21px;
+  }
+  .service-pet {
+    padding: 0px 0 0 0px;
+  }
+}
+@media (max-width: 992px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pet-dog {
+    width: 20%;
+    padding: 0 5px;
+  }
+  .pet-img {
+    width: 100px;
+    margin: auto;
+  }
+
+  .right-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .right-arrow a {
+    display: block;
+    float: none;
+    margin: auto;
+    line-height: 50px;
+  }
+
+  .right-arrow img {
+    width: 26px;
+    padding: 5px;
+  }
+  .po-ab-se img {
+    width: 8%;
+  }
+  .d-img1 img {
+    width: 31%;
+  }
+  .pet-service h4 {
+    font-size: 15px;
+  }
+  .pet-img img {
+    width: 51px;
+    padding: 0;
+  }
+  .pet-service {
+    height: 275px;
+  }
+  .pet-service p {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+  }
+  .safety-first img {
+    width: 100%;
+    position: relative;
+    left: -19px;
+    top: 0;
+  }
+  .po-ab-se {
+    z-index: 1;
+    top: 24%;
+    right: 0;
+    left: 18%;
+  }
+  .swiper-button-next {
+    top: 34%;
+  }
+  .swiper-button- {
+    top: 34%;
+  }
+
+  .dogsafety {
+    padding: 29px 0 18px 0;
+  }
+  .right-arrow img {
+    width: 26px;
+    padding: 5px;
+  }
+  .owl-nav.disabled {
+    display: block !important;
+  }
+
+  .block {
+    position: relative;
+    background-color: #ce7c2a;
+    height: 199px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    z-index: 1;
+    margin-bottom: -96px;
+  }
+  .block h4 {
+    font-size: 19px;
+    float: right;
+    padding: 54px 32px 21px 0;
+  }
+  .at input[type="text"] {
+    width: 67%;
+    float: right;
+  }
+  .at img {
+    width: 11%;
+    height: 28%;
+    padding: 5px;
+    position: absolute;
+    top: 69%;
+    left: 84%;
+    background: #ce7c2a;
+  }
+  .healthy {
+    padding: 25px 0 0 0;
+  }
+  .top {
+    color: #fff;
+    font-size: 15px;
+  }
+  .our-vision h3 {
+    font-size: 24px;
+  }
+  .our-vision {
+    background: #7f7045;
+    padding: 19px;
+  }
+  .our-vision p {
+    color: #fff;
+    font-size: 11px;
+  }
+  .circle {
+    padding: 48px;
+    border-radius: 50%;
+    position: absolute;
+    background: #7f70457a;
+    left: 0px;
+  }
+  .healthy-food img {
+    width: 17%;
+    padding: 10px;
+    z-index: 0;
+    height: 100px;
+  }
+  .pets-groom h4 {
+    text-align: center;
+    font-size: 17px;
+  }
+  .styling-pet {
+    padding: 0px 60px;
+  }
+  .virtual-training-img {
+    padding: 30px 299px;
+  }
+  .virtual-training-arrow img {
+    background: #7f7045;
+    margin: 0px 0 -28px 0;
+    height: 62px;
+    width: 10%;
+    padding: 10px;
+  }
+  .pet1 {
+    padding: 0px 0 0 0px;
+  }
+
+  .rt-box {
+    display: block !important;
+    text-align: center;
+  }
+  .routine-icon {
+    padding-right: 0px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .rt-box {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-one h4 {
+    font-size: 16px;
+  }
+  .footer-one span {
+    font-size: 13px;
+  }
+  .social-icon1 ul li:last-child {
+    display: none;
+  }
+  .social-icon1 ul li {
+    padding: 0 5px 0 0px;
+  }
+  .footer-list li {
+    font-size: 13px;
+  }
+  .footer .col-sm-3,
+  .footer .col-sm-2 {
+    padding: 0px 5px;
+  }
+  .icon i {
+    line-height: 16px;
+  }
+  .dogsafety h2 {
+    font-size: 25px;
+  }
+
+  .container,
+  .container-sm {
+    max-width: 90%;
+  }
+  .pet-img {
+    width: 100px;
+    margin: auto;
+  }
+
+  .right-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .right-arrow a {
+    display: block;
+    float: none;
+    margin: auto;
+    line-height: 50px;
+  }
+
+  .right-arrow img {
+    width: 26px;
+    padding: 5px;
+  }
+  .col-sm-6.pr-90 {
+    padding-right: 15px;
+  }
+  .pet1 {
+    padding: 40px 0px;
+  }
+  .top-header {
+    display: none;
+  }
+  ul.clearfix {
+    display: flex;
+    list-style: none;
+    padding: 14px 0 0 0;
+    justify-content: left;
+  }
+  .footer-one {
+    text-align: left;
+  }
+  .block {
+    position: relative;
+    background-color: #ce7c2a;
+    height: 150px;
+    width: 92%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    z-index: 1;
+    margin-bottom: -96px;
+  }
+  .at {
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+  .block img {
+    display: none;
+  }
+  .po-ab-se {
+    z-index: 1;
+    top: 40%;
+    right: 0;
+    left: 13%;
+  }
+  .swiper-button-next {
+    top: 50%;
+  }
+  .swiper-button-prev {
+    top: 50%;
+  }
+  .d-img1 img {
+    width: 16%;
+  }
+  .po-ab-se img {
+    width: 16%;
+  }
+  .pet-service {
+    background: #ce7c2a;
+    border-radius: 50%;
+    border-radius: 99px 99px 99px 99px !important;
+    text-align: center;
+  }
+  .dog-s img {
+    float: left;
+    margin-right: 10px;
+  }
+  .dog-s {
+    display: block;
+  }
+  .safety-first img {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 0;
+  }
+  .rating1 {
+    padding: 0px 20px 0 20px;
+  }
+
+  .pet-img img {
+  }
+  .pet-dog {
+    width: 50%;
+    padding: 6px 20px;
+  }
+  .right-arrow img {
+    width: 26px;
+    padding: 5px;
+  }
+  .at img {
+    width: 11%;
+    height: 28%;
+    padding: 5px;
+    position: absolute;
+    top: 69%;
+    left: 84%;
+    background: #ce7c2a;
+  }
+
+  .block {
+    position: relative;
+    background-color: #ce7c2a;
+    height: 191px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    z-index: 1;
+    margin-bottom: -96px;
+  }
+
+  .block input[type="text"] {
+    width: 100%;
+    padding: 15px 10px;
+  }
+  .footer-one {
+    text-align: left;
+  }
+  ul.clearfix {
+    list-style: none;
+    padding: 14px 0 0 0;
+    justify-content: left;
+  }
+  .block img:nth-child(1) {
+    position: absolute;
+    bottom: 0px;
+    /* left: 40px; */
+    height: 230px;
+    width: auto;
+  }
+  .about-BarkVille {
+    padding: 0px;
+  }
+  .story {
+    background: #dcdcdc4d;
+    padding: 0px 0 52px 0;
+  }
+  .story h2 {
+    font-size: 25px;
+  }
+
+  .fresh-food1 img {
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+  }
+  .fresh-food:before {
+    content: "";
+    background: #dcdcdc54;
+    right: 0;
+    width: 100%;
+    top: 0px;
+    bottom: 0;
+    position: absolute;
+  }
+  .distracted-fact {
+    padding: 15px 20px 0 20px;
+  }
+  .text-reader h2 {
+    font-size: 28px;
+    font-family: "Jost";
+    padding: 8px 0px 8px 0px;
+  }
+  .text-reader {
+    padding: 0px 20px 13px 20px;
+  }
+  .text-contrary {
+    padding: 0px 20px 13px 20px;
+  }
+
+  .story-img1 {
+    margin: -57px 0 0 0;
+    padding: 0;
+  }
+  img.img-aboutp {
+    width: 15%;
+    position: relative;
+    left: 50%;
+    top: -50%;
+  }
+  .blog-deta h6 {
+    padding: 0px 0 10px 10px;
+  }
+  .blog-deta h2 {
+    padding: 0px 0 10px 10px;
+  }
+  .blog-deta h3 {
+    padding: 0 0 10px 10px;
+  }
+  .blog-deta p {
+    padding: 0 0 10px 10px;
+  }
+  .blog-heading h3 {
+    padding: 15px 0 10px 10px;
+  }
+  .blog-heading p {
+    padding: 0 0 0 10px;
+  }
+  .blog-p p {
+    padding: 0 0 10px 10px;
+  }
+  .banner-about h2 {
+    font-size: 45px;
+  }
+  .banner-about p {
+    font-size: 16px;
+    padding: 0;
+  }
+  .up-arrow img {
+    width: 17%;
+  }
+  .text h2 {
+    padding: 0 0 20px 10px;
+  }
+  .arrow-image {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 10%;
+  }
+  .text p {
+    padding: 0 0 0 10px;
+  }
+  .text1 p {
+    padding: 0 0 0 10px;
+  }
+  .reg-form input[type="text-area"] {
+    border: none;
+    background: gainsboro;
+    padding: 15px 115px 110px 14px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .reg-form input[type="text-field"] {
+    border: none;
+    background: gainsboro;
+    padding: 20px 117px 20px 10px;
+    margin: 0px 0 10px 0px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .virtual-training-img {
+    padding: 30px 145px;
+  }
+  .virtual-training-arrow img {
+    background: #7f7045;
+    margin: 0px 0 -39px 0;
+    height: 76px;
+    width: 16%;
+    padding: 10px;
+  }
+  .healthy-food img {
+    width: 20%;
+    padding: 0px 0px 68px 0px;
+    z-index: 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .rt-box {
+    display: block !important;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-one h4 {
+    font-size: 16px;
+  }
+
+  .footer-one span {
+    font-size: 13px;
+  }
+
+  .social-icon1 ul li:last-child {
+    display: none;
+  }
+
+  .social-icon1 ul li {
+    padding: 0 5px 0 0px;
+  }
+
+  .footer-list li {
+    font-size: 13px;
+  }
+
+  .footer .col-sm-3,
+  .footer .col-sm-2 {
+    padding: 0px 5px;
+  }
+
+  .icon i {
+    line-height: 16px;
+  }
+
+  .dogsafety h2 {
+    font-size: 25px;
+  }
+
+  .pet-img {
+    width: 100px;
+    margin: auto;
+  }
+
+  .right-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .right-arrow a {
+    display: block;
+    float: none;
+    margin: auto;
+    line-height: 50px;
+  }
+
+  .right-arrow img {
+    width: 26px;
+    padding: 5px;
+  }
+  .pet1 {
+    padding: 40px 0px;
+  }
+  .col-sm-6.pr-90 {
+    padding-right: 15px;
+  }
+  .top-header {
+    display: none;
+  }
+  .block img {
+    display: none;
+  }
+  .at {
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+  .top {
+    font-size: 13px;
+  }
+
+  .po-ab-se {
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    left: 0;
+    top: 40%;
+    right: 0;
+    left: 0;
+    padding: 9em 0;
+  }
+  .swiper-button-next {
+    top: 70%;
+  }
+  .swiper-button-prev {
+    top: 70%;
+  }
+  .po-ab-se img {
+    width: 17%;
+  }
+  .d-img1 img {
+    width: 13%;
+  }
+  .pet-dog {
+    width: 50%;
+  }
+  .pet-img img {
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+  }
+  .footer-one {
+    text-align: left;
+  }
+
+  .right-arrow img {
+    width: 26px;
+    padding: 5px;
+  }
+  .safety-first img {
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  ul.clearfix {
+    display: flex;
+    list-style: none;
+    padding: 14px 0 0 0;
+    justify-content: left;
+  }
+  .story h2 {
+    text-align: center;
+    font-size: 23px;
+  }
+  .story-img1 {
+    padding: 0;
+    margin: -27px 0 0 0;
+  }
+  .story {
+    padding: 0px 0 8px 0;
+  }
+  .fresh-food1 img {
+    width: 100%;
+    padding: 0;
+  }
+  .fresh-food:before {
+    content: "";
+    background: #dcdcdc54;
+    right: 0;
+    width: 100%;
+    top: 0px;
+    bottom: 0;
+    position: absolute;
+  }
+  .block h4 {
+    font-size: 17px;
+    float: left;
+    padding-top: 20px;
+  }
+  .block {
+    position: relative;
+    background-color: #ce7c2a;
+    height: 150px;
+    width: 92%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    z-index: 1;
+    margin-bottom: -96px;
+  }
+  .at input[type="text"] {
+    width: 100%;
+    float: right;
+  }
+  .at img {
+    width: 13%;
+    height: 29%;
+    padding: 5px;
+    position: absolute;
+    top: 67%;
+    left: 80%;
+    background: #ce7c2a;
+  }
+  .blog-deta h6 {
+    padding: 0px 0 10px 10px;
+  }
+  .blog-deta h2 {
+    padding: 0px 0 10px 10px;
+  }
+  .blog-deta h3 {
+    padding: 0 0 10px 10px;
+  }
+  .blog-deta p {
+    padding: 0 0 10px 10px;
+  }
+  .blog-heading h3 {
+    padding: 15px 0 10px 10px;
+  }
+  .blog-heading p {
+    padding: 0 0 0 10px;
+  }
+  .blog-p p {
+    padding: 0 0 10px 10px;
+  }
+  .banner-about h2 {
+    font-size: 40px;
+  }
+  .banner-about p {
+    font-size: 14px;
+    padding: 0;
+  }
+  .up-arrow img {
+    width: 17%;
+  }
+  .text h2 {
+    padding: 0 0 20px 10px;
+  }
+  .text p {
+    padding: 0 0 0 10px;
+  }
+  .distracted-fact {
+    padding: 15px 0 0 10px;
+  }
+  .text-reader {
+    padding: 0px 0 13px 10px;
+  }
+  .text-contrary {
+    padding: 0 0 0px 10px;
+  }
+  .text1 p {
+    padding: 0 0 0 10px;
+  }
+  .reg-form input[type="text-area"] {
+    border: none;
+    background: gainsboro;
+    padding: 15px 115px 119px 20px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .reg-form input[type="text-field"] {
+    border: none;
+    background: gainsboro;
+    padding: 20px 117px 20px 10px;
+    margin: 0 0 10px 4px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .virtual-training-img {
+    padding: 30px 119px;
+  }
+  .virtual-training-arrow img {
+    background: #7f7045;
+    margin: 0px 0 -21px 0;
+    height: 40px;
+    width: 13%;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+  .pet-dog {
+    width: 100%;
+    padding: 6px 20px;
+  }
+}

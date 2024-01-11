@@ -1,0 +1,61 @@
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+
+
+<section class="midsection" style="background: url('{% static 'images/banner6.png' %}');background-size: cover;
+    background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="banner-about">
+                    <h2>About Our Mission</h2>
+                    <!-- <p>Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry</p> -->
+                    <div class="up-arrow">
+                        <a href="{% url 'home' %}"> <img src="{% static 'images/up-a.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+    <div class="container">
+        <div class="mission">
+            <ul>
+                <li><strong>Rescue:</strong> We tirelessly work to rescue animals from dire situations, providing them with
+                    a safe haven where they can heal physically and emotionally.</li>
+                <li><strong>Rehabilitate:</strong> Our team of compassionate veterinarians, trainers, and caregivers
+                    provides personalized care to every animal under our roof.</li>
+                <li><strong>Kind Services:</strong> Beyond rescue and rehabilitation, we believe in the power of kind
+                    services. We educate the community about responsible pet ownership and advocate for the rights and
+                    welfare of animals.</li>
+            </ul>
+        </div>
+
+    </div>
+{% include 'app/footer.html' %}
+{% endblock %}
+
+
+<!-- **About Us**
+
+Welcome to [Animal Shelter Name], where compassion meets dedication! Founded with a profound love for animals and a shared vision of creating a world where every creature is cherished and cared for, we stand as a beacon of hope for animals in need.
+
+**Our Mission**
+
+At [Animal Shelter Name], we are on a heartfelt mission to rescue, rehabilitate, and provide kind services to animals that have faced adversity. We believe in the inherent value of every life, furry or feathered, and are dedicated to giving each animal a chance at a better life. Our unwavering commitment lies in:
+
+**Rescue:** We tirelessly work to rescue animals from dire situations, providing them with a safe haven where they can heal physically and emotionally. Whether they’ve been abandoned, abused, or neglected, we offer a warm and caring environment to help them regain their trust in humanity.
+
+**Rehabilitate:** Our team of compassionate veterinarians, trainers, and caregivers provides personalized care to every animal under our roof. Through medical attention, behavioral training, and plenty of love, we nurture their spirits and prepare them for a loving forever home.
+
+**Kind Services:** Beyond rescue and rehabilitation, we believe in the power of kind services. We educate the community about responsible pet ownership, promote spaying and neutering, and advocate for the rights and welfare of animals. By fostering empathy and understanding, we strive to create a world where animals are treated with the respect and love they deserve.
+
+**Our Promise**
+
+When you support [Animal Shelter Name], you become a part of a larger movement. A movement that values life in all its forms and celebrates the unbreakable bond between humans and animals. Every donation, every adoption, and every act of kindness fuels our efforts and brings us one step closer to our vision of a compassionate world.
+
+**Get Involved**
+
+Join us in our mission! Whether you’re looking to adopt a furry friend, volunteer your time, or contribute to our cause, there are numerous ways you can get involved. Together, we can make a difference in the lives of animals and create a future where every tail wags with happiness and every heart beats with love.
+
+Thank you for being a part of our journey. Together, we are transforming lives, one paw at a time. -->

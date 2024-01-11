@@ -1,0 +1,124 @@
+{% load static %}
+<section>
+    <!-- <div class="newsletter">
+        <div class="container">
+            <div class="block">
+
+                
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-3 col-sm-2 col-xs-1">
+                        <img src="{% static 'images/news.png' %}" alt="">
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-10 col-xs-11">
+                        <h4>Subscribe to Our Newsletter</h4>
+                        <form id="my-form-newsletter" action="subscribe.php" method="post"  class="form-event">
+                        <div class="at">
+                            <input type="email" name="email" placeholder="Your Email Here">
+                            <button class="at-submit" id="submitnewsletter" name="submitnewsletter" type="submit"><i class="fa fa-at" aria-hidden="true"></i></button>
+                        </div>
+                        <div id="resultsubscription">
+                            <span class="seccess1" style="color:#ffffff">Mail Sent. Thank you, we will contact you shortly.</span>
+                            <span class="error1" style="color:#ffffff">Mail was not Sent.</span>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> -->
+
+
+</section>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="footer-one">
+                    <h4>Get In Touch</h4>
+                    <span>Have a Question for us?<br>we'll answer your problem here</span>
+                    <div class="social-icon1">
+                        <ul class="clearfix">
+                            <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-2">
+                <div class="footer-one">
+                    <h4>About</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Job</a></li>
+                        <li><a href="#">In press</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer-one">
+                    <h4>Contact Us</h4>
+
+                    <div class="icon">
+                        <i class="fa fa-location-arrow"></i>
+                        <span>Gandhinagar, Gujarat, India. 382355</span>
+                    </div>
+                    <div class="icon">
+                       <i class="fa fa-phone"></i>
+                        <span>+91 8905578953</span>
+                    </div>
+                    <div class="icon">
+                        <a href="mailto:99barkville@gmail.com"><i class="fa fa-envelope"></i></a>
+                        <span>99barkville@gmail.com</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="copy">
+         <p>Copyright 2022 by<span> BarkVille Foundation</span></p> 
+    </div>
+</section>
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script>
+        var x = document.getElementById("resultsubscription");
+        var currentLocation1 = window.location;
+
+        //var url_string = "http://localhost/baby/newform.html?seccess=1"; //window.location.href
+        var url = new URL(currentLocation1);
+        var seccess1 = url.searchParams.get("successreq");
+        var error1 = url.searchParams.get("failreq");
+
+        if (seccess1 == 1) {
+            $(".seccess1").show();
+            $(".error1").hide();
+        }
+        else if (error1 == 1) {
+            $(".seccess1").hide();
+            $(".error1").show();
+        }
+        else {
+            $(".seccess1").hide();
+            $(".error1").hide();
+            //document.getElementById("resultmm").style.display = "none";
+        }
+
+    </script>

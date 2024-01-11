@@ -1,0 +1,76 @@
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+    <!--minsection-start-->
+    <section class="midsection" style="background: url('{% static 'images/banner3.png' %}');background-size: cover;
+    background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="banner-about">
+                    <h2>Services-Details</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry</p>
+                    <div class="up-arrow">
+                        <a href="{% url 'home' %}"> <img src="{% static 'images/up-a.png' %}" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="s-detial">
+                        <h6><img src="{% static 'images/dog-icon.png' %}" alt="">Service</h6>
+                        <h2>Consultation and References</h2>
+                        <i class="fa fa-phone"></i><a href="https://api.whatsapp.com/send?phone=918905578953"><i class="fa fa-whatsapp" style="color:#ce7c2a"></i></a><span style="color: black"> +91 8905578953 ( Swati verma )</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="fact">
+                            <img src="{% static 'images/food.png' %}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="distracted-fact">
+                            <h2>Referral to Vets</h2>
+                            <p>
+                                The dog shelter provides a referral service to veterinarians. When dog owners or potential adopters require veterinary care for their pets, the shelter can provide recommendations and contact information for trusted local veterinarians. This ensures that dogs receive the necessary medical attention from qualified professionals.
+                            </p>
+                        </div>
+                        <div class="distracted-fact">
+                            <h2>Referral to Behaviorists</h2>
+                            <p>
+                                Sometimes dogs may exhibit behavioral issues or require training to become well-adjusted pets. In such cases, the shelter offers referrals to behaviorists or dog trainers who specialize in addressing these concerns. Behaviorists can assess and analyze the dog's behavior, provide guidance, and offer training techniques to improve their behavior and overall well-being.
+                            </p>
+                        </div>
+                        <div class="distracted-fact">
+                            <h2>Referral to Pet Boardings</h2>
+                            <p>
+                                In situations where dog owners need temporary care for their pets, such as during vacations or emergencies, the shelter can offer referrals to reliable pet boarders. These are individuals or facilities that provide safe and comfortable boarding options for dogs. This service ensures that dog owners have peace of mind knowing that their pets are well-cared for in a suitable environment while they are away.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+        </br>
+        </br>
+        <div class="row">
+            <div class="text-reader">
+              <h2>Why care about these three points as a pet parent?</h2>
+              <ul>
+                <li>Health and well-being: Regular veterinary care is essential to maintain your dog's health and catch any potential issues early on. This helps ensure that your dog receives appropriate treatment and can lead a happy and healthy life.</li>
+                <li>Behavioral support: Dogs, like humans, can experience behavioral challenges. Consulting a behaviorist can help address these issues and create a positive environment for your dog's well-being. Proper behavior management also promotes a safe and harmonious relationship between you, your dog, and your community.</li>
+                <li>Temporary care needs: Life circumstances may require you to be away from your dog temporarily. Having access to reliable pet boarders allows you to travel or attend to other responsibilities without worrying about your dog's care. It ensures your dog is safe, comfortable, and receives necessary attention in your absence.</li>
+              </ul>
+            </div>
+          </div>
+          
+            </div>
+
+        </div>
+
+    </section>
+    {% include 'app/footer.html' %}
+{% endblock %}

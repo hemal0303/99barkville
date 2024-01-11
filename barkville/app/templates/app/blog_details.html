@@ -1,0 +1,41 @@
+{% extends 'app/header.html' %}
+{% load static %}
+{% block content %}
+    <!--header-end-->
+    <!--minsection-start-->
+    <section class="midsection" style="background: url('{% static 'images/banner5.png' %}');background-size: cover;
+    background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="banner-about">
+                    <h2>Blogs-Detail</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing <br>and typesetting industry</p>
+                    <div class="up-arrow">
+                        <a href="{% url 'home' %}"> <img src="{% static 'images/up-a.png' %}" alt=""></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-detail">
+        <div class="container">
+            <div class="row">
+                <div class="blog-deta">
+                    <h6>Our Blogs</h6>
+                    <h2>{{ blog.title }}<small>({{ blog.author }})</small></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="blog-img">
+                    <img src="{{ blog.full_image.url }}" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <p>{{ blog.content }}</p>
+            </div>
+        </div>
+
+    </section>
+    {% include 'app/footer.html' %}
+{% endblock %}
